@@ -1,0 +1,10 @@
+# This is a boilerplate parameters config generated for pipeline 'Preprocessing'
+# using Kedro 0.18.12.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.18.12/kedro_project_setup/configuration.html#parameters
+
+Preprocessing:
+  parameters:
+    countries: ['Germany','Austria','France']
+    date_column: 'retailweek'

@@ -1,0 +1,11 @@
+# This is a boilerplate parameters config generated for pipeline 'FeatureEngineering'
+# using Kedro 0.18.12.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.18.12/kedro_project_setup/configuration.html#parameters
+FeatureEngineering:
+  parameters:
+    main_colors: ["rgb_r_main_col","rgb_g_main_col","rgb_b_main_col"]
+    sec_colors: ["rgb_r_sec_col","rgb_g_sec_col","rgb_b_sec_col"]
+    test_date: "2017-01-01"
+    train_date: "2016-08-01"

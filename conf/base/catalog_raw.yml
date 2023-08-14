@@ -1,0 +1,37 @@
+
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+Sales:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/sales.txt
+  load_args:
+    sep: ";"
+    na_values: []
+    parse_dates: ["retailweek"]
+    date_format: "%Y-%m-%d"
+  save_args:
+    index: False
+    date_format: "%Y-%m-%d"
+    decimal: .
+  metadata:
+    kedro-viz:
+      layer: Raw
+      preview_args:
+        nrows: 10
+
+Articles:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/article_attributes.txt
+  load_args:
+    sep: ";"
+    na_values: []
+  save_args:
+    index: False
+    decimal: .
+  metadata:
+    kedro-viz:
+      layer: Raw
+      preview_args:
+        nrows: 10

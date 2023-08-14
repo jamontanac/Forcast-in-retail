@@ -1,0 +1,6 @@
+"{country}_{xy}_{traintest}":
+  type: pandas.ParquetDataSet
+  filepath: data/04_feature/{country}_{xy}_{traintest}.pq
+  metadata:
+    kedro-viz:
+      layer: Features

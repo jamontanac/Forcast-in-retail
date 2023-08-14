@@ -1,0 +1,70 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+
+"{namespace}.{dataset}_Final":
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/{dataset}.pq
+  metadata:
+    kedro-viz:
+      layer: Intermediate
+
+"{dataset}_Normality_Report":
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/{dataset}_normality_report.png
+  metadata:
+    kedro-viz:
+      layer: Intermediate
+
+
+
+
+# "{namespace}.{dataset_name}#parquet":
+#   type: pandas.ParquetDataSet
+#   filepath: data/02_intermediate/{dataset_name}.pq
+#   metadata:
+#     kedro-viz:
+#       layer: Intermediate
+
+# Preprocessing.Germany_Dataset:
+#   type: pandas.ParquetDataSet
+#   filepath: data/02_intermediate/germanyDataset.pq
+#   metadata:
+#     kedro-viz:
+#       layer: Intermediate
+
+# Preprocessing.Austria_Dataset:
+#   type: pandas.ParquetDataSet
+#   filepath: data/02_intermediate/austriaDataset.pq
+#   metadata:
+#     kedro-viz:
+#       layer: Intermediate
+      
+# Preprocessing.France_Dataset:
+#   type: pandas.ParquetDataSet
+#   filepath: data/02_intermediate/franceDataset.pq
+#   metadata:
+#     kedro-viz:
+#       layer: Intermediate
+
+# Germany_complete:
+#   type: pandas.ParquetDataSet
+#   filepath: data/02_intermediate/germanycomplete.pq
+#   metadata:
+#     kedro-viz:
+#       layer: Intermediate
+
+# Austria_complete:
+#   type: pandas.ParquetDataSet
+#   filepath: data/02_intermediate/austriacomplete.pq
+#   metadata:
+#     kedro-viz:
+#       layer: Intermediate
+      
+# France_complete:
+#   type: pandas.ParquetDataSet
+#   filepath: data/02_intermediate/francecomplete.pq
+#   metadata:
+#     kedro-viz:
+#       layer: Intermediate
