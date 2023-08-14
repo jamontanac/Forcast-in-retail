@@ -3,3 +3,21 @@
 #
 # Documentation for this file format can be found in "Parameters"
 # Link: https://docs.kedro.org/en/0.18.12/kedro_project_setup/configuration.html#parameters
+
+train_evaluation:
+  features_to_use:
+    categorical: ['productgroup', 'gender', 'style']
+    bucket: ['sizes']
+    invariant: ['promo1', 'promo2']
+    numerical: ['regular_price','current_price','main_rgb','sec_rgb','ratio'] 
+  model_options:
+    module: sklearn.ensemble
+    class: RandomForestRegressor
+    kwargs:
+      n_estimators: 500
+      criterion: 'poisson'
+      max_features: 11
+      bootstrap: True
+      oob_score: True
+      verbose: 0
+      warm_start: False

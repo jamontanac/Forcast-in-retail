@@ -1,0 +1,6 @@
+"{dataset}_modeling_pipeline":
+  type: pickle.PickleDataSet
+  filepath: data/06_models/modeling_pipe_{dataset}.pkl
+  metadata:
+    kedro-viz:
+      layer: modelling

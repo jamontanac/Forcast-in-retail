@@ -1,4 +1,4 @@
-"{country}_{xy}_{traintest}":
+"{country}_{xy}_{traintest}_forTrain":
   type: pandas.ParquetDataSet
   filepath: data/04_feature/{country}_{xy}_{traintest}.pq
   metadata:

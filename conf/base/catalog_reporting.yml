@@ -1,0 +1,42 @@
+metrics_germany:
+  type: tracking.MetricsDataSet
+  filepath: data/09_tracking/metrics_germany.json
+  metadata:
+    kedro-viz:
+      layer: Reporting
+
+metrics_france:
+  type: tracking.MetricsDataSet
+  filepath: data/09_tracking/metrics_france.json
+  metadata:
+    kedro-viz:
+      layer: Reporting
+
+metrics_austria:
+  type: tracking.MetricsDataSet
+  filepath: data/09_tracking/metrics_austria.json
+  metadata:
+    kedro-viz:
+      layer: Reporting
+
+
+france_feature_importance:
+  type: plotly.JSONDataSet
+  filepath: data/08_reporting/france_feature_importance.json
+  metadata:
+    kedro-viz:
+      layer: Reporting
+
+austria_feature_importance:
+  type: plotly.JSONDataSet
+  filepath: data/08_reporting/austria_feature_importance.json
+  metadata:
+    kedro-viz:
+      layer: Reporting
+
+germany_feature_importance:
+  type: plotly.JSONDataSet
+  filepath: data/08_reporting/germany_feature_importance.json
+  metadata:
+    kedro-viz:
+      layer: Reporting
